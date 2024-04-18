@@ -1,4 +1,9 @@
 Scriptname SRScripts:DynOutfitDataStructures Hidden Const
+;/
+AUTHOR: MrRomerius
+LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
+NOTES: N/A
+/;
 
 ; STRUCTS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
