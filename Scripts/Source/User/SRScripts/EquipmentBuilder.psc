@@ -3,7 +3,8 @@ Scriptname SRScripts:EquipmentBuilder extends Quest
 ;/
 AUTHOR: MrRomerius
 LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
-NOTES: Scoring relies on getting vendor objects from O(n) locations every time player enters a settlement. Could be improved...
+NOTES: Loops are not recommended on this script as they have gotten stuck in the past when interfacing with the outfit changer spell.
+Those loops have been moved over to the WorkshopNPCOutfitChanger script.
 /;
 
 import SRScripts:DynOutfitDataStructures
