@@ -3,7 +3,7 @@ Scriptname SRScripts:WorkshopNPCOutfitChanger extends activemagiceffect
 ;/
 AUTHOR: MrRomerius
 LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
-NOTES: Scoring relies on getting vendor objects from O(n) locations every time player enters a settlement. Could be improved...
+NOTES:
 /;
 
 import SRScripts:DynOutfitUtilityFunctions
@@ -129,7 +129,6 @@ EndEvent
 
 ; Data deletion is handled here instead of OnDeath() in case player resurrects NPC.
 Event OnUnload()
-	DebugEquipData()
 	CancelAllTimers()
 	if myNPC.IsDead()
 		myEquipData.DeleteEquipData()
@@ -154,7 +153,6 @@ Event SRScripts:LocalVendorScore.BetterVendorAdded(SRScripts:LocalVendorScore ak
 		RequestVendorUpdate(akArgs[0] as int, akArgs[1] as int)
 		SetClothesFromAIPackage()
 		myEquipData.SaveEquipData(self)
-		DebugEquipData()
 	endif
 	GoToState("")
 EndEvent
@@ -164,7 +162,6 @@ Event SRScripts:LocalVendorScore.LocalVendorScoresUpdated(SRScripts:LocalVendorS
 		RequestEquipmentUpdate(VendorScores.LocalVendorLevels)
 		SetClothesFromAIPackage()
 		myEquipData.SaveEquipData(self)
-		DebugEquipData()
 	endif
 EndEvent
 
@@ -175,7 +172,6 @@ Event OnTimer(int aiTimerID)
 		RequestClothes(iStoreLevel2)
 		SetClothesFromAIPackage()
 		myEquipData.SaveEquipData(self)
-		DebugEquipData()
 	endif
 EndEvent
 
@@ -268,7 +264,6 @@ Function RequestVendorUpdate(int aiVendorType, int aiVendorLevel)
 EndFunction
 
 Function RequestClothes(int aiClothesID, int aiVendorID = -1)
-	Debug.Trace("EquipBuilder val:" + EquipBuilder + " from " + myNPC)
 	if aiClothesID == iStoreNone
 		SleepWear = EquipBuilder.GetSleepClothes(aiClothesID, GetActorType(myNPC))
 	elseif aiClothesID == iStoreLevel1
@@ -321,11 +316,9 @@ EndFunction
 Function StartOutfitChanger()
 	RegisterMyEvents()
 	SetEquipmentVars()
-	DebugEquipData()
 	CheckEquipLevels()
 	SetClothesFromAIPackage()
 	Debug.Trace("SUCCESS: Outfit changer active on " + myNPC)
-	DebugEquipData()
 EndFunction
 
 Function CheckEquipLevels()
@@ -461,7 +454,6 @@ SRScripts:NPCEquipData Function GetEquipData()
 EndFunction
 
 bool Function bLinkedToActiveWorkshop(WorkshopNPCScript akWshopNPC)
-	Debug.Trace("VendorScores: " + VendorScores + " from " + akWshopNPC)
 	if akWshopNPC && VendorScores
 		int iActiveWshopID = VendorScores.ActiveWorkshopID
 		if WorkshopParent.CaravanActorAliases.Find(akWshopNPC) > -1
