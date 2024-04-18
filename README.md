@@ -16,8 +16,9 @@ This mod is designed using a subscription-based model. It uses an event broker s
 When those events fire off, the event broker calls functions on other scripts based on what event it receives. Currently, my mod only works on settler NPCs, but this model allows for
 maximum flexibility and easy expansion if we want to increase our scope to include other kinds of NPCs, as well as the player.
 
-Similarly, NPCs given the magic effect object by our mod are also subscribe to custom events from our mod and the base game upon loading into a worldspace. Barring any major script lag from the game,
-NPCs should change their clothing based on the events they receive from the base game and our mod. They unregister soon as they and their magic effect object are fully unloaded.
+Similarly, NPCs given the magic effect object by our mod are also subscribed to custom events from our mod and the base game upon loading into a worldspace. Barring any major script
+lag from the game (an unfortunately common occurrence even without any mods), NPCs should change their clothing based on the events they receive from the base game and our mod.
+They unregister soon as they and their magic effect object are fully unloaded.
 
 ## Known Issues
 - This mod currently only works on settler NPCs. Other NPCs (companions, raiders, BOS, Diamond City residents, etc.) that use beds will be included in future updates.
