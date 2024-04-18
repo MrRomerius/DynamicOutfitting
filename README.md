@@ -22,7 +22,3 @@ maximum flexibility and easy expansion if we want to increase our scope to inclu
 That's just the mod saving the NPC's equipment. Not a bug.
 - No uninstall feature as of yet. This is a beta. Scripts aren't saved by the game, but I don't recommend removing the mod mid-game as it does generate inventory objects for NPCs
 and you don't want to use a save that has missing references baked into them. As always, use at your own risk!
-
-## Code of Conduct
-If you want to contribue to this project in some way, cool. Just one rule: don't be a jerk. Coding is hard and stressful enough as it is, and I don't have the patience for children
-who park their manners outside their computer screens. This is hard shit. Treat yourself and your devs better.
