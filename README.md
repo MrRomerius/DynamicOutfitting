@@ -1,4 +1,4 @@
-# DynamicOutfitting
+# Dynamic Outfitting
 **A Fallout 4 mod that gives NPCs the ability to change their outfits.**
 
 Dynamic Outfitting is a simple script-based Fallout 4 mod that adds the ability for NPC characters to change their outfits based on the AI packages they run.
