@@ -2,7 +2,7 @@ Scriptname SRScripts:DynOutfitUtilityFunctions Hidden Const
 ;/
 AUTHOR: MrRomerius
 LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
-NOTES: Scoring relies on getting vendor objects from O(n) locations every time player enters a settlement. Could be improved...
+NOTES: N/A
 /;
 
 int Function GetActorType(Actor akActor, int aiChild = 2) global
