@@ -26,7 +26,3 @@ and you don't want to use a save that has missing references baked into them. As
 ## Code of Conduct
 If you want to contribue to this project in some way, cool. Just one rule: don't be a jerk. Coding is hard and stressful enough as it is, and I don't have the patience for children
 who park their manners outside their computer screens. This is hard shit. Treat yourself and your devs better.
-
-## License
-I didn't like any of the licenses on offer from GitHub, so I'll just drop mine here. Consider my license the same as the MIT license, only with one caveat. Attribute me
-as the author for whatever code you may find useful for your own scripting projects. A simple pay-it-forward, that's all.
