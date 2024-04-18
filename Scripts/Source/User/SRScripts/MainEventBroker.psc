@@ -2,8 +2,7 @@ Scriptname SRScripts:MainEventBroker extends Quest
 {Event broker handles custom events sent by other scripts.}
 ;/
 AUTHOR: MrRomerius
-PERMISSIONS: Feel free to reuse parts of this code you find useful so long as proper credit is given and these comments maintained
-in any duplication or repurposing. Pay it forward!
+LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
 NOTES: This is a centralized broker that handles custom events sent by other scripts. It can be expanded to handle more scripts and events.
 /;
 
