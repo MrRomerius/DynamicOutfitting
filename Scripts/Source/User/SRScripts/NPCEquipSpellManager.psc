@@ -3,7 +3,7 @@ Scriptname SRScripts:NPCEquipSpellManager extends Quest
 ;/
 AUTHOR: MrRomerius
 LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
-NOTES: Scoring relies on getting vendor objects from O(n) locations every time player enters a settlement. Could be improved...
+NOTES: There have been issues with this script adding non-human NPCs. Has been taken care of, I think. Requires more monitoring just to be sure.
 /;
 
 ; GROUPS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
