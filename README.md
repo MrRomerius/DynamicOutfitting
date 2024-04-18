@@ -14,7 +14,14 @@ dealing with poor documentation, bad code from other devs, and a buttload of res
 ## Design
 This mod is designed using a subscription-based model. It uses an event broker script subscribed to other scripts and programmed to listen for their custom events.
 When those events fire off, the event broker calls functions on other scripts based on what event it receives. Currently, my mod only works on settler NPCs, but this model allows for
-maximum flexiblity and easy expansion if we want to expand our scope to include other kinds of NPCs, as well as the player.
+maximum flexibility and easy expansion if we want to increase our scope to include other kinds of NPCs, as well as the player.
+
+## Known Issues
+- This mod currently only works on settler NPCs. Other NPCs (companions, raiders, BOS, Diamond City residents, etc.) that use beds will be included in future updates.
+- Not really an issue, but you might notice a split-second flicker on an NPC if you catch them spawning or after you access their inventory to equip or unequip clothing items.
+That's just the mod saving the NPC's equipment. Not a bug.
+- No uninstall feature as of yet. This is a beta. Scripts aren't saved by the game, but I don't recommend removing the mod mid-game as it does generate inventory objects for NPCs
+and you don't want to use a save that has missing references baked into them. As always, use at your own risk!
 
 ## Code of Conduct
 If you want to contribue to this project in some way, cool. Just one rule: don't be a jerk. Coding is hard and stressful enough as it is, and I don't have the patience for children
