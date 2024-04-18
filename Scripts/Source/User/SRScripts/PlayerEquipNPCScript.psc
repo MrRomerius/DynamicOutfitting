@@ -3,7 +3,7 @@ Scriptname SRScripts:PlayerEquipNPCScript extends ReferenceAlias
 ;/
 AUTHOR: MrRomerius
 LICENSE: Feel free to reuse this code in whole or in part so long as proper authorship credit is given. Pay it forward!
-NOTES: Scoring relies on getting vendor objects from O(n) locations every time player enters a settlement. Could be improved...
+NOTES: This script has a workaround for a base game bug that disable magic effects on NPCs if you change their equipment.
 /;
 
 ; VARS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
